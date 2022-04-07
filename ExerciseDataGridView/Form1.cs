@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ExerciseDataGridView
 {
-    public partial class Form1 : Form
+    public partial class Exe1 : Form
     {
-        public Form1()
+        public Exe1()
         {
             InitializeComponent();
         }

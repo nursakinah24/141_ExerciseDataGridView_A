@@ -1,7 +1,7 @@
 ﻿
 namespace ExerciseDataGridView
 {
-    partial class Form1
+    partial class Exe1
     {
         /// <summary>
         /// Required designer variable.
@@ -57,7 +57,7 @@ namespace ExerciseDataGridView
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ExerciseDataGridView.Properties.Resources.umy;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(91, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(143, 147);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -77,7 +77,7 @@ namespace ExerciseDataGridView
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Staatliches", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(217, 34);
+            this.label2.Location = new System.Drawing.Point(321, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(469, 63);
             this.label2.TabIndex = 2;
@@ -104,11 +104,11 @@ namespace ExerciseDataGridView
             this.sexDataGridViewTextBoxColumn,
             this.phoneMhsDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.mahasiswaBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(36, 178);
+            this.dataGridView1.Location = new System.Drawing.Point(91, 208);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(727, 248);
+            this.dataGridView1.Size = new System.Drawing.Size(926, 308);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -183,17 +183,17 @@ namespace ExerciseDataGridView
             this.phoneMhsDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.phoneMhsDataGridViewTextBoxColumn.Name = "phoneMhsDataGridViewTextBoxColumn";
             // 
-            // Form1
+            // Exe1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GrayText;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1108, 639);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Form1";
+            this.Name = "Exe1";
             this.Text = "Exercise 1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
