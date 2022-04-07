@@ -30,6 +30,7 @@ namespace ExerciseDataGridView
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -81,6 +82,7 @@ namespace ExerciseDataGridView
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nIMDataGridViewTextBoxColumn,
@@ -89,11 +91,11 @@ namespace ExerciseDataGridView
             this.sexDataGridViewTextBoxColumn,
             this.phoneMhsDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.mahasiswaBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(97, 188);
+            this.dataGridView1.Location = new System.Drawing.Point(49, 190);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(649, 215);
+            this.dataGridView1.Size = new System.Drawing.Size(691, 197);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -114,42 +116,42 @@ namespace ExerciseDataGridView
             // nIMDataGridViewTextBoxColumn
             // 
             this.nIMDataGridViewTextBoxColumn.DataPropertyName = "NIM";
-            this.nIMDataGridViewTextBoxColumn.HeaderText = "NIM";
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.RosyBrown;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Maroon;
+            this.nIMDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
+            this.nIMDataGridViewTextBoxColumn.HeaderText = "Nomor Mahasiswa";
             this.nIMDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nIMDataGridViewTextBoxColumn.Name = "nIMDataGridViewTextBoxColumn";
-            this.nIMDataGridViewTextBoxColumn.Width = 125;
             // 
             // namaMhsDataGridViewTextBoxColumn
             // 
             this.namaMhsDataGridViewTextBoxColumn.DataPropertyName = "NamaMhs";
-            this.namaMhsDataGridViewTextBoxColumn.HeaderText = "NamaMhs";
+            this.namaMhsDataGridViewTextBoxColumn.HeaderText = "Nama Mahasiswa";
             this.namaMhsDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.namaMhsDataGridViewTextBoxColumn.Name = "namaMhsDataGridViewTextBoxColumn";
-            this.namaMhsDataGridViewTextBoxColumn.Width = 125;
             // 
             // alamatMhsDataGridViewTextBoxColumn
             // 
             this.alamatMhsDataGridViewTextBoxColumn.DataPropertyName = "AlamatMhs";
-            this.alamatMhsDataGridViewTextBoxColumn.HeaderText = "AlamatMhs";
+            this.alamatMhsDataGridViewTextBoxColumn.HeaderText = "Alamat Mahasiswa";
             this.alamatMhsDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.alamatMhsDataGridViewTextBoxColumn.Name = "alamatMhsDataGridViewTextBoxColumn";
-            this.alamatMhsDataGridViewTextBoxColumn.Width = 125;
             // 
             // sexDataGridViewTextBoxColumn
             // 
             this.sexDataGridViewTextBoxColumn.DataPropertyName = "Sex";
-            this.sexDataGridViewTextBoxColumn.HeaderText = "Sex";
+            this.sexDataGridViewTextBoxColumn.HeaderText = "Jenis Kelamin";
             this.sexDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.sexDataGridViewTextBoxColumn.Name = "sexDataGridViewTextBoxColumn";
-            this.sexDataGridViewTextBoxColumn.Width = 125;
             // 
             // phoneMhsDataGridViewTextBoxColumn
             // 
             this.phoneMhsDataGridViewTextBoxColumn.DataPropertyName = "PhoneMhs";
-            this.phoneMhsDataGridViewTextBoxColumn.HeaderText = "PhoneMhs";
+            this.phoneMhsDataGridViewTextBoxColumn.HeaderText = "No. Telepon";
             this.phoneMhsDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.phoneMhsDataGridViewTextBoxColumn.Name = "phoneMhsDataGridViewTextBoxColumn";
-            this.phoneMhsDataGridViewTextBoxColumn.Width = 125;
             // 
             // Form1
             // 
